@@ -1,18 +1,71 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Profile
+permalink: /profile/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## 自己紹介
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+![](/img/profile.jpg){: width="250" }
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+こんにちは！<br/>
+私は1992年生まれの金 南逸（キム ナミル）と申します。<br/>
+フルスタックのプログラマーです。<br/>
+以下では、私のスキルセットや経歴について紹介させていただきます。<br/>
 
+### プロフィール
 
-[jekyll-organization]: https://github.com/jekyll
+1. **学歴**:
+   - 建國大學校（韓国）忠州キャンパス
+     - 卒業: 2017年 コンピューター工学科
+
+2. **スキルセット**:
+   - フロントエンド: HTML, CSS, JavaScript, React, Vue.js
+   - バックエンド: Node.js, Express, PHP,  Laravel
+   - データベース: MySQL, PostgreSQL, Redis, DynamoDB
+   - サーバー管理: AWS, Docker
+
+<!-- 2. **実務経験**(2023.07基準): -->
+3. **実務経験**(準備中):
+   - [前職やフリーランスの経験など]で、以下のプロジェクトに従事しました。
+     - 期間：0000.00.00 ~ 0000.00.00 (00年00ヶ月間)
+     - 内容：
+     - 人数：
+     - 役割：
+     - 言語、フレームワーク：
+     - DB：
+   - [前職やフリーランスの経験など]で、以下のプロジェクトに従事しました。
+     - 期間：0000.00.00 ~ 0000.00.00 (00年00ヶ月間)
+     - 内容：
+     - 人数：
+     - 役割：
+     - 言語、フレームワーク：
+     - DB：
+   - [前職やフリーランスの経験など]で、以下のプロジェクトに従事しました。
+     - 期間：0000.00.00 ~ 0000.00.00 (00年00ヶ月間)
+     - 内容：
+     - 人数：
+     - 役割：
+     - 言語、フレームワーク：
+     - DB：
+   - [前職やフリーランスの経験など]で、以下のプロジェクトに従事しました。
+     - 期間：0000.00.00 ~ 0000.00.00 (00年00ヶ月間)
+     - 内容：
+     - 人数：
+     - 役割：
+     - 言語、フレームワーク：
+     - DB：
+
+4. **強み**:
+   - 継続的な学習と技術トレンドへの追従に取り組んでいます。
+   - 指摘された部分を改善し、同じミスをしないように努力します。
+   - チームコラボレーションを重視し、コミュニケーション能力にも自信があります。
+
+5. **ポートフォリオ**（準備中）:
+   - 私のポートフォリオには、これまでのプロジェクトや開発したアプリケーションの詳細が含まれています。ぜひご覧ください。
+
+### 終わりに
+
+このブログを通じて、私の知識やスキルを活かし、読者の皆様に価値を提供できることを目指しています。仕事の機会についても興味がありますので、お気軽にご連絡いただければ幸いです。
+
+以上が私の自己紹介です。もしご質問やご相談がありましたら、お気軽にお知らせください。どうぞよろしくお願いいたします。
