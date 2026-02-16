@@ -68,86 +68,92 @@ permalink: /dashboard/
 
   <h2 class="section-title">強み Top5</h2>
   <article class="card">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>Skill</th>
-          <th>Category</th>
-          <th>Level</th>
-          <th>Confidence</th>
-          <th>Evidence</th>
-          <th>Strength Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for skill in strengths limit:5 %}
-        <tr>
-          <td>{{ skill.name }}</td>
-          <td>{{ skill.category }}</td>
-          <td>{{ skill.level }}</td>
-          <td>{{ skill.confidence }}</td>
-          <td>{{ skill.evidence | size }}</td>
-          <td><span class="score-pill">{{ skill.strength_score }}</span></td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="modern-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Category</th>
+            <th>Level</th>
+            <th>Confidence</th>
+            <th>Evidence</th>
+            <th>Strength Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for skill in strengths limit:5 %}
+          <tr>
+            <td>{{ skill.name }}</td>
+            <td>{{ skill.category }}</td>
+            <td>{{ skill.level }}</td>
+            <td>{{ skill.confidence }}</td>
+            <td>{{ skill.evidence | size }}</td>
+            <td><span class="score-pill">{{ skill.strength_score }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </article>
 
   <h2 class="section-title">弱み Top5（優先度）</h2>
   <article class="card">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>Skill</th>
-          <th>Gap</th>
-          <th>Stale</th>
-          <th>No Evidence</th>
-          <th>Low Confidence</th>
-          <th>Priority</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for skill in weak_points limit:5 %}
-        {% assign gap = skill.target.m3 | minus: skill.level %}
-        {% if gap < 0 %}{% assign gap = 0 %}{% endif %}
-        <tr>
-          <td>{{ skill.name }}</td>
-          <td>{{ gap }}</td>
-          <td>{{ skill.stale_score }}</td>
-          <td>{{ skill.no_evidence }}</td>
-          <td>{{ skill.low_confidence }}</td>
-          <td><span class="score-pill">{{ skill.priority_score }}</span></td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="modern-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Gap</th>
+            <th>Stale</th>
+            <th>No Evidence</th>
+            <th>Low Confidence</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for skill in weak_points limit:5 %}
+          {% assign gap = skill.target.m3 | minus: skill.level %}
+          {% if gap < 0 %}{% assign gap = 0 %}{% endif %}
+          <tr>
+            <td>{{ skill.name }}</td>
+            <td>{{ gap }}</td>
+            <td>{{ skill.stale_score }}</td>
+            <td>{{ skill.no_evidence }}</td>
+            <td>{{ skill.low_confidence }}</td>
+            <td><span class="score-pill">{{ skill.priority_score }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </article>
 
   <h2 class="section-title">直近90日の次アクション Top10</h2>
   <article class="card">
-    <table class="modern-table">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Skill</th>
-          <th>Priority</th>
-          <th>Next Action</th>
-          <th>Last Used</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for skill in weak_points limit:10 %}
-        <tr>
-          <td>{{ forloop.index }}</td>
-          <td>{{ skill.name }}</td>
-          <td><span class="score-pill">{{ skill.priority_score }}</span></td>
-          <td>{{ skill.next_action }}</td>
-          <td>{{ skill.last_used }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="modern-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Skill</th>
+            <th>Priority</th>
+            <th>Next Action</th>
+            <th>Last Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for skill in weak_points limit:10 %}
+          <tr>
+            <td>{{ forloop.index }}</td>
+            <td>{{ skill.name }}</td>
+            <td><span class="score-pill">{{ skill.priority_score }}</span></td>
+            <td>{{ skill.next_action }}</td>
+            <td>{{ skill.last_used }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
     <p class="formula">
       gap = max(target.m3 - level, 0) / priority_score = gap*3 + stale_score*2 + no_evidence*2 + low_confidence*1 / 基準日: 2026-02
     </p>

@@ -225,6 +225,16 @@ h4,
   background: rgba(255, 255, 255, 0.88);
 }
 
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll .modern-table {
+  min-width: 680px;
+}
+
 .modern-table thead th {
   background: #eaf3fb;
   color: #17364f;
@@ -239,6 +249,13 @@ h4,
   border-bottom: 1px solid #e3edf6;
   padding: 0.62rem 0.72rem;
   vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.modern-table .cta-link {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .modern-table tbody tr:last-child td {
@@ -361,10 +378,8 @@ h4,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .modern-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+  .table-scroll .modern-table {
+    min-width: 760px;
   }
 }
 
