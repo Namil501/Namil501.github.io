@@ -351,6 +351,56 @@ h4,
   color: #1f3d56;
 }
 
+.profile-page .profile-intro-card {
+  padding: 1.1rem 1.2rem;
+}
+
+.profile-intro {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 148px;
+  height: 148px;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 1px solid #c9deef;
+  box-shadow: 0 12px 28px -18px rgba(10, 41, 69, 0.6);
+  background: #fff;
+}
+
+.profile-page .section-title {
+  margin-top: 0;
+}
+
+.profile-page .profile-stats {
+  margin-top: 0.95rem;
+}
+
+.profile-page .profile-tags {
+  margin-top: 0.45rem;
+}
+
+.profile-page .career-item + .career-item {
+  margin-top: 0.85rem;
+}
+
+.profile-page .career-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.03rem;
+  color: var(--bg-deep);
+}
+
+.career-period {
+  margin-left: 0.35rem;
+  font-size: 0.83rem;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+
 .formula {
   margin-top: 0.9rem;
   font-size: 0.88rem;
@@ -396,6 +446,16 @@ h4,
 
   .modern-hero {
     padding: 1rem;
+  }
+
+  .profile-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    width: 122px;
+    height: 122px;
   }
 
   .nav-pills a {
