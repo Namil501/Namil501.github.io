@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+## Skill Portal
+
+- [Dashboard](/dashboard/)
+- [Skills](/skills/)
+- [Evidence](/evidence/)

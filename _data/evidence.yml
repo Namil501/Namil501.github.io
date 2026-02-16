@@ -1,0 +1,50 @@
+- id: EV-001
+  title: 年金システム 明細作成処理改修・移行
+  period: "2025-07 - 2026-02 (継続)"
+  role: メンバー（14名体制）
+  technologies:
+    - Java
+    - Oracle
+    - JP1
+    - Linux
+    - Windows
+  result_summary: 基本設計〜結合/総合テストまで対応し、新システム移行に伴う月次処理改修を実施。
+  link: /evidence/pension-system-2025/
+
+- id: EV-002
+  title: 商社システム追加機能開発
+  period: "2025-04 - 2025-06"
+  role: メンバー（5名体制）
+  technologies:
+    - Java
+    - SpringBoot
+    - Oracle(PL/SQL)
+    - Windows
+  result_summary: 設計書ベースで実装と単体テスト設計・実施を担当。
+  link: /evidence/trading-system-2025q2/
+
+- id: EV-003
+  title: 薬歴システム保守開発（FuelPHP→Laravel移行）
+  period: "2024-08 - 2025-03"
+  role: メンバー（6名体制）
+  technologies:
+    - PHP
+    - Laravel
+    - MySQL
+    - Linux
+  result_summary: フレームワーク移行と不具合修正、保守運用を実施。
+  link: /evidence/medical-system-migration-2024-2025/
+
+- id: EV-004
+  title: 業務フロー管理システム開発
+  period: "2022-08 - 2024-07"
+  role: メンバー（5名体制）
+  technologies:
+    - JavaScript
+    - PHP
+    - Vue.js
+    - Laravel
+    - MySQL
+    - Linux
+  result_summary: 画面/API実装、OpenAPI作成、総合テスト、運用保守を継続対応。
+  link: /evidence/workflow-system-2022-2024/

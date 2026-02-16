@@ -1,0 +1,358 @@
+- name: JavaScript
+  category: Frontend
+  level: 4
+  confidence: A
+  last_used: "2024-07"
+  evidence:
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "Vue.js画面で型安全な状態管理パターンを1つ標準化し、再利用テンプレート化する"
+  stale_score: 3
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 9
+  strength_score: 17
+
+- name: TypeScript
+  category: Frontend
+  level: 3
+  confidence: B
+  last_used: "2022-07"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 5
+  next_action: "1週間でAPI DTOとフロント型定義の同期手順を作り、サンプル実装を1本作る"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 16
+  strength_score: 8
+
+- name: Vue.js
+  category: Frontend
+  level: 4
+  confidence: A
+  last_used: "2024-07"
+  evidence:
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "既存画面の1機能をComposition API + テスト可能構成へリファクタし、設計指針を残す"
+  stale_score: 3
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 9
+  strength_score: 17
+
+- name: Next.js
+  category: Frontend
+  level: 3
+  confidence: B
+  last_used: "2022-07"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 5
+  next_action: "App Router前提で1ページを再構築し、SSR/CSRの使い分け基準をメモ化する"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 16
+  strength_score: 8
+
+- name: React
+  category: Frontend
+  level: 3
+  confidence: B
+  last_used: "2024-01"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "小規模画面を1つ作り、状態管理・コンポーネント分割・テスト方針をEvidence化する"
+  stale_score: 4
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 14
+  strength_score: 9
+
+- name: Java
+  category: Backend
+  level: 5
+  confidence: A
+  last_used: "2026-02"
+  evidence:
+    - /evidence/pension-system-2025/
+    - /evidence/trading-system-2025q2/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "例外設計とログ設計の共通テンプレートを作成し、保守運用時の障害切り分け時間を短縮する"
+  stale_score: 0
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 0
+  strength_score: 26
+
+- name: PHP
+  category: Backend
+  level: 5
+  confidence: A
+  last_used: "2025-03"
+  evidence:
+    - /evidence/medical-system-migration-2024-2025/
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "Laravel移行時の不具合パターンをチェックリスト化してレビュー基準に組み込む"
+  stale_score: 2
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 4
+  strength_score: 24
+
+- name: Go
+  category: Backend
+  level: 3
+  confidence: B
+  last_used: "2022-07"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "Echoを使ったAPIを1本実装し、ログ・メトリクス・エラーハンドリングをセットで検証する"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 16
+  strength_score: 8
+
+- name: Express.js
+  category: Backend
+  level: 4
+  confidence: B
+  last_used: "2021-12"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "認証・入力検証・監査ログを含むAPI雛形を作成し、再利用可能なベースを整える"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 13
+  strength_score: 12
+
+- name: Laravel
+  category: Backend
+  level: 5
+  confidence: A
+  last_used: "2025-03"
+  evidence:
+    - /evidence/medical-system-migration-2024-2025/
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "テストデータ生成と回帰試験の自動化を進め、保守案件の品質を安定化させる"
+  stale_score: 2
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 4
+  strength_score: 24
+
+- name: SpringBoot
+  category: Backend
+  level: 2
+  confidence: C
+  last_used: "2025-06"
+  evidence:
+    - /evidence/trading-system-2025q2/
+  target:
+    m3: 4
+    m6: 4
+    m12: 5
+  next_action: "DI・例外処理・テストを含む最小APIサービスを作り、実務投入前の基礎を固める"
+  stale_score: 2
+  no_evidence: 0
+  low_confidence: 1
+  priority_score: 11
+  strength_score: 8
+
+- name: MySQL
+  category: DB
+  level: 5
+  confidence: A
+  last_used: "2025-03"
+  evidence:
+    - /evidence/medical-system-migration-2024-2025/
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "遅いクエリ分析手順を運用手順化し、障害時の初動対応を30分以内に収める"
+  stale_score: 2
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 4
+  strength_score: 24
+
+- name: PostgreSQL
+  category: DB
+  level: 4
+  confidence: B
+  last_used: "2021-12"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "インデックス設計と実行計画レビューをテーマに、検証SQLと結果をEvidence化する"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 13
+  strength_score: 12
+
+- name: Redis
+  category: DB
+  level: 4
+  confidence: B
+  last_used: "2021-12"
+  evidence: []
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "キャッシュ設計と失効戦略を含む検証を行い、障害時のフェイルセーフ手順を定義する"
+  stale_score: 5
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 13
+  strength_score: 12
+
+- name: Oracle
+  category: DB
+  level: 4
+  confidence: A
+  last_used: "2026-02"
+  evidence:
+    - /evidence/pension-system-2025/
+    - /evidence/trading-system-2025q2/
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "月次処理のSQL改善ポイントを整理し、性能劣化を早期検知する運用ルールを作る"
+  stale_score: 0
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 0
+  strength_score: 22
+
+- name: Linux
+  category: Infra
+  level: 5
+  confidence: A
+  last_used: "2026-02"
+  evidence:
+    - /evidence/pension-system-2025/
+    - /evidence/medical-system-migration-2024-2025/
+    - /evidence/workflow-system-2022-2024/
+  target:
+    m3: 5
+    m6: 5
+    m12: 5
+  next_action: "障害調査で使うコマンドセットをRunbook化し、オンコール時の再現性を高める"
+  stale_score: 0
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 0
+  strength_score: 28
+
+- name: Windows
+  category: Infra
+  level: 5
+  confidence: A
+  last_used: "2026-02"
+  evidence:
+    - /evidence/pension-system-2025/
+    - /evidence/trading-system-2025q2/
+  target:
+    m3: 4
+    m6: 4
+    m12: 4
+  next_action: "Windowsバッチ運用の監視観点をチェックリスト化し、作業漏れを防止する"
+  stale_score: 0
+  no_evidence: 0
+  low_confidence: 0
+  priority_score: 0
+  strength_score: 26
+
+- name: AWS
+  category: Infra
+  level: 1
+  confidence: C
+  last_used: "2024-01"
+  evidence: []
+  target:
+    m3: 3
+    m6: 4
+    m12: 4
+  next_action: "CloudWatch + IAM + VPCの最小構成を作り、監視と権限管理の基礎を実践で補強する"
+  stale_score: 4
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 17
+  strength_score: 0
+
+- name: JP1
+  category: Infra
+  level: 2
+  confidence: C
+  last_used: "2026-02"
+  evidence:
+    - /evidence/pension-system-2025/
+  target:
+    m3: 3
+    m6: 3
+    m12: 4
+  next_action: "ジョブ異常時のリカバリ手順を1本作成し、運用引き継ぎできる資料にする"
+  stale_score: 0
+  no_evidence: 0
+  low_confidence: 1
+  priority_score: 4
+  strength_score: 10
+
+- name: JUnit
+  category: Quality
+  level: 1
+  confidence: C
+  last_used: "2024-01"
+  evidence: []
+  target:
+    m3: 3
+    m6: 4
+    m12: 4
+  next_action: "既存Javaモジュールでユニットテストを10本追加し、CI実行まで通してEvidence化する"
+  stale_score: 4
+  no_evidence: 1
+  low_confidence: 1
+  priority_score: 17
+  strength_score: 0
